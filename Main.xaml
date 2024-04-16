@@ -105,7 +105,7 @@
       </ui:GetRobotAsset.Value>
     </ui:GetRobotAsset>
     <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtProducts]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="450,128" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="[strExcelFilePath]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,181" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Teste&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,181" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Teste&quot;]" />
     <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtProducts]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,489" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
